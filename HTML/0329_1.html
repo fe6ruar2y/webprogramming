@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8">
+    <title>연습문제 2</title>
+    <style>
+			#container { 
+				width:520px;
+				border:1px solid black;
+				padding:20px 40px;
+				margin:0 auto;
+			}
+      fieldset { margin-bottom:15px; }
+      legend { font-weight:bold; }
+			ul {list-style-type: none;}
+			li { line-height:30px;}
+    </style>
+  </head>
+  <body>
+		<!-- <div id="container"> -->
+			<h1>피자 주문서 </h1>
+			<form>
+						 <!-- <input>태그 앞 뒤에 <label>과 </label> 태그로 묶어도 됩니다 -->
+                         <p>
+                            <label for="sname"> 고객명 : </label>
+                            <input type="text" id="sname" autofocus placeholder="김가영">
+                         </p>
+                         <p>
+                            <label for="snumber"> 전화번호 : </label>
+							<input type="text" id="snumber" autofocus placeholder="핸드폰 번호">
+                         </p>
+                         <p>
+                            <label for="smail">E-mail : </label>
+                            <input type="email" id="smail">
+                         </p>
+                         <p>
+                            <label for="spizza">피자선택 : </label>
+                            <select>
+                                <option value="combi">치즈 퐁듀 파이어 미트</option>
+                                <option value="pp">페페로니 피자</option>
+                                <option value="goguma">고구마 피자</option>
+                                <option value="hawaii">하와이언 피자</option>
+                                <option value="shrimp">쉬림프 피자</option>
+                                <option value="potatop">베이컨 포테이토 피자</option>
+                            </select>
+                         </p>
+
+				<fieldset>
+                    <legend>피자 사이즈</legend>
+                            <p>
+                                <label><input type="radio" name="size" value="small">Small
+                            </p>
+                            <p>
+                                <label><input type="radio" name="size" value="medium">Medium
+                            </p>
+                            <p>
+                                <label><input type="radio" name="size" value="large">Large
+                            </p>
+
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend>토핑 선택</legend>
+                            <p>
+                                <label><input type="checkbox" name="toping" value="bacon">베이컨</label>
+
+                            </p>
+                            <p>
+                                <label><input type="checkbox" name="toping" value="cheese">치즈</label>
+
+                            </p>
+                            <p>
+                                <label><input type="checkbox" name="toping" value="onion">양파</label>
+
+                            </p>
+                            <p>
+                                <label><input type="checkbox" name="toping" value="mushroom">버섯</label>
+
+                            </p>   
+                </fieldset>
+                <label for name="shope">희망배송시간 : </label>
+                <input type="time" id="shpoe">
+                <br>
+                <br>
+            <label>
+                배송시 요청사항 : <textarea id="motive" cols="30" rows="4"></textarea>
+            </label>
+            <br>
+				<div>
+					<input type="submit" value="주문하기">
+					<input type="reset" value="취소하기">
+					<!-- 다음과 같이 작성해도 됩니다.
+						<button type="submit">접수하기</boutton>
+						<button type="reset">다시 쓰기</button>
+					-->
+				</div>
+			</form>
+		</div>
+  </body>
+</html>

@@ -1,0 +1,33 @@
+h2 {
+    color:white;
+    text-decoration:underline;
+}
+
+body {
+    background-color: grey;
+}
+
+hr {
+    color:white;
+}
+
+ul {
+    background-color: antiquewhite;
+    color: blue;
+}
+
+li {
+    color: blue;
+}
+
+.accent {
+    font-size: 25px;
+    color:greenyellow;
+}
+
+#scoref {
+    text-align:center;
+    color:blue;
+}
+
+

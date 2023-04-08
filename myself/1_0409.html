@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>0409 연습</title>
+        <style>
+            #shipping li label {
+                width:120px;
+                float:left; 
+                text-align:left;     
+            }
+        </style>
+    </head>
+    <body>
+        <!--textarea 연습-->
+        <form>
+            <fieldset>
+                <legend>배송 정보</legend>
+                <ul type="none" id="shipping">
+                    <li>
+                        <label for="user-id">이름</label>
+                        <input type="text" id="user-id">
+                    </li>
+                    <li>
+                        <label for="addr">배송 주소</label>
+                        <input type="text" id="addr">
+                    </li>
+                    <li>
+                        <label for="mail">이메일</label>
+                        <input type="email" id="mail">
+                    </li>
+                    <li>
+                        <label for="tell">연락처</label>
+                        <input type="tel" id="tell">
+                    </li>
+                    <li>
+                        <label for="date">배송 지정</label>
+                        <input type="date" id="date"> <small>(주문일로부터 최소 3일 이후)</small>
+                    </li>
+                    <li>
+                        <label for="memo">메모</label>
+                        <textarea id="memo" cols="40" rows="4"></textarea>
+                    </li>
+                </ul>
+                <input type="submit" value="주문하기">
+                <input type="reset" value="취소하기">
+            </fieldset>
+        </form>
+
+        <!--select, option 태그 연습-->
+        <form>
+            <fieldset>
+                <legend>피자 주문서</legend>
+                <ul type="none" id="shipping">
+                    <li>
+                        <label for="pizza-name">피자 이름</label>
+                        <input type="text" id="pizza-name">
+                    </li>
+                    <li>
+                        <label for="pizza-price">피자 가격</label>
+                        <input type="text" id="pizza-price">
+                    </li>
+                    <li>
+                        <label for="choose">피자 선택</label>
+                        <select id="choose">
+                            <option value="pepe" selected>페페로니 피자</option>
+                            <option value="hawaii">하와이안 피자</option>
+                            <option value="potato">포테이토 피자</option>
+                            <option value="combi">콤비네이션 피자</option>
+                        </select>
+                    </li>
+                </ul>
+                <input type="submit" value="주문하기">
+                <input type="reset" value="취소하기">
+            </fieldset>
+        </form>
+
+        <!--회원 가입 신청서-->
+        <h2>회원 가입을 환영합니다</h2>
+        <form>
+            <fieldset>
+                <legend>사용자 정보</legend>
+                <ul id="shipping">
+                    <li>
+                        <label for="uid">아이디</label>
+                        <input type="text" id="uid" placeholder="4자~10자 사이, 공백없이">
+                    </li>
+                    <li>
+                        <label for="umail">이메일</label>
+                        <input type="email" id="umail">
+                    </li>
+                    <li>
+                        <label for="upw">비밀번호</label>
+                        <input type="password" id="upw" placeholder="문자와 숫자, 특수기호 포함">
+                    </li>
+                    <li>
+                        <label for="upwc">비밀번호 확인</label>
+                        <input type="password" id="upwc">
+                    </li>
+                    <li>
+                        <label for="path">가입 경로</label>
+                        <select id="path">
+                            <option value="blog" selected>블로그</option>
+                            <option value="sns">SNS</option>
+                            <option value="search">검색</option>
+                            <option value="etc">기타</option>
+                        </select>
+                    </li>
+                    <li>
+                        <label for="memo">메모</label>
+                        <textarea id="memo" cols="40" rows="4" placeholder="남길 말씀이 있다면 여기에 작성해주세요"></textarea>
+                    </li>
+                </ul>
+            </fieldset>
+            <fieldset>
+                <legend>이벤트와 새로운 소식</legend>
+                <label><input type="radio" name="mail" value="yes">메일 수신</label>
+                <label><input type="radio" name="mail" value="no">메일 수신 안 함</label>
+            </fieldset>
+            <button type="submit">가입하기</button>
+            <button type="reset">취소</button>
+        </form>
+    </body>
+</html>

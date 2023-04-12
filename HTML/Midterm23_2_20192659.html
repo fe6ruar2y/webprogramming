@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <title>Midterm23_2</title>
+    </head>
+    <body>
+        <h2>2023년 봄 웹플밍 중간고사</h2>
+        <hr>
+        <h3>List + Link</h3>
+        <p>My favorite Web Development Learning Sites</p>
+        <ul>
+            <li>
+                <a href="https://www.freecodecamp.org/" target="blank">freeCodeCamp</a>
+            </li>
+            <li>
+                <a href="https://css-tricks.com/" target="blank">CSS-Tricks</a>
+            </li>
+            <li>
+                <a href="https://www.traversymedia.com/" target="blank">Traversy Media</a>
+            </li>
+        </ul>
+        <hr>
+        <h3>Image</h3>
+        <img src="https://shorturl.at/aT289" height="200">
+        <hr>
+        <h3>Table</h3>
+        <table border="1">
+            <tr>
+                <th rowspan="3">Day</th>
+                <th colspan="3">Seminar</th>
+            </tr>
+            <tr>
+                <th colspan="2">Schedule</th>
+                <th rowspan="2">Topic</th>
+            </tr>
+            <tr>
+                <th>Begin</th>
+                <th>End</th>
+            </tr>
+            <tr>
+                <td rowspan="2">Monday</td>
+                <td rowspan="2">8:00 a.m</td>
+                <td rowspan="2">5:00 p.m</td>
+                <td>Introduction to XML</td>
+            </tr>
+            <tr>
+                <td>Validity: DTD and Relax NG</td>
+            </tr>
+            <tr>
+                <td rowspan="2">Tuesday</td>
+                <td>8:00 a.m</td>
+                <td>11:00 a.m</td>
+                <td>Xpath</td>
+            </tr>
+            <tr>
+                <td>11:00 a.m</td>
+                <td>2:00 p.m</td>
+                <td>XSL transformation</td>
+            </tr>
+        </table>
+        <br>
+        <hr>
+        <h3>Form</h3>
+        <form>
+            <fieldset>
+                <legend>Personal Information</legend>
+                <label for="user-name">Name</label>
+                <input type="text" id="user-name" placeholder="Type your name">
+                <br>
+                <label for="user-birth">Birthday</label>
+                <input type="date" id="user-birth">
+                <br>
+                <p>Kindly Select your favorite sports</p>
+                
+                <label><input type="radio" name="sports" value="football" checked>Football</label>
+                <br>
+                <label><input type="radio" name="sports" value="baseball">Baseball</label>
+                <br>
+                <label><input type="radio" name="sports" value="badminton">Badminton</label>
+                <br>
+                <div>
+                    <input type="submit" value="submit">
+                    <input type="reset" value="cancel">
+                </div>
+            </fieldset>
+        </form>
+    </body>
+</html>

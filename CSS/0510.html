@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>0510</title>
+    <style>
+        .box {
+            color: white;
+            position: absolute;
+            top: 30%;
+            width: 120px;
+            height: 50px;
+            background-color: skyblue;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            animation: breathe 3s ease-in-out infinite;
+          }
+          
+          .box:hover {
+            transform: scale(1.2);
+            background-color: orange;
+          }
+          
+          .box .default-text {
+            font-size: 16px;
+            font-weight: bold;
+            text-align: center;
+          }
+          
+          .box .hover-text {
+            display: none;
+            font-size: 16px;
+            font-weight: bold;
+            text-align: center;
+          }
+          
+          .box:hover .default-text {
+            display: none;
+          }
+          
+          .box:hover .hover-text {
+            display: block;
+          }
+          
+          @keyframes breathe {
+            0% {
+              transform: scale(1);
+            }
+            50% {
+              transform: scale(1.2);
+            }
+            100% {
+              transform: scale(1);
+            }
+          }
+              
+    .square {
+        width: 100px;
+        height: 100px;
+        background-color: red;
+        position: absolute;
+        top: 10%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        animation: rotate 2s linear infinite;
+    }
+
+    @keyframes rotate {
+        from {
+        transform: translate(-50%, -50%) rotate(0deg);
+        }
+        to {
+        transform: translate(-50%, -50%) rotate(360deg);
+        }
+    }
+    </style>
+</head>
+<body>
+    <div class="square"></div>
+    <div class="box">
+        <span class="default-text">Hover gayeong</span>
+        <span class="hover-text">Hover gayeong</span>
+      </div>
+      
+      
+</body>
+</html>
